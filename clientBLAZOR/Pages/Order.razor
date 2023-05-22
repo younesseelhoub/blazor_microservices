@@ -1,0 +1,38 @@
+﻿@page "/orders"
+@inherits Ordeer
+
+
+@if (orders == null)
+{
+    <h3>Loading catalogs...</h3>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Order Id</th>
+                <th>Product Id </th>
+                <th>Quantity </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in orders)
+            {
+                <tr>
+                    <td>@order.Id</td>
+                    <td>@order.ProductId</td>
+                    <td>@order.Quantity</td>
+                    @*<td>@</td>*@
+                    @* <td>@catalog.Description</td>
+            <td>@catalog.Price</td>
+            @*<td>@catalog.StockQuantity</td>*@
+                    <td>
+                        <button class="btn btn-primary" @onclick="() => ShowCatalog(order.Id)"><i class="oi oi-pencil"></i></button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <button class="btn btn-primary" @onclick="CreateNewOrder">Create New Order</button>
+}

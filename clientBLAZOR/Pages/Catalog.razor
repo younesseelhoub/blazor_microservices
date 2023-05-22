@@ -1,0 +1,35 @@
+﻿@page "/catalogs"
+@inherits Category
+
+@if (Catalogs == null)
+{
+    <h3>Loading catalogs...</h3>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Catalog Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Stock Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var catalog in Catalogs)
+            {
+                <tr>
+                    <td>@catalog.Name</td>
+                    <td>@catalog.Description</td>
+                    <td>@catalog.Price</td>
+                    <td>@catalog.StockQuantity</td>
+                    <td>
+                        <button class="btn btn-primary" @onclick="() => ShowCatalog(catalog.Id)"><i class="oi oi-pencil"></i></button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <button class="btn btn-primary" @onclick="CreateNewCatalog">Create New Catalog</button>
+}

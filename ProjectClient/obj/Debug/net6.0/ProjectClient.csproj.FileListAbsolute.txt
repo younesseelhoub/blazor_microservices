@@ -1,0 +1,6 @@
+C:\Users\yelhoub\OneDrive - SQLI\Documents\learningProjects\microservices\Project angular\MicroservicesRabbitMQ\ProjectClient\obj\Debug\net6.0\ProjectClient.csproj.AssemblyReference.cache
+C:\Users\yelhoub\OneDrive - SQLI\Documents\learningProjects\microservices\Project angular\MicroservicesRabbitMQ\ProjectClient\obj\Debug\net6.0\ProjectClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yelhoub\OneDrive - SQLI\Documents\learningProjects\microservices\Project angular\MicroservicesRabbitMQ\ProjectClient\obj\Debug\net6.0\ProjectClient.AssemblyInfoInputs.cache
+C:\Users\yelhoub\OneDrive - SQLI\Documents\learningProjects\microservices\Project angular\MicroservicesRabbitMQ\ProjectClient\obj\Debug\net6.0\ProjectClient.AssemblyInfo.cs
+C:\Users\yelhoub\OneDrive - SQLI\Documents\learningProjects\microservices\Project angular\MicroservicesRabbitMQ\ProjectClient\obj\Debug\net6.0\ProjectClient.csproj.CoreCompileInputs.cache
+C:\Users\yelhoub\OneDrive - SQLI\Documents\learningProjects\microservices\Project angular\MicroservicesRabbitMQ\ProjectClient\obj\Debug\net6.0\ProjectClient.MvcApplicationPartsAssemblyInfo.cache

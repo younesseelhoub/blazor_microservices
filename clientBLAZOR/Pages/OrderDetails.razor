@@ -1,0 +1,48 @@
+﻿@page "/order"
+@* @page "/order/{id:int}" *@
+
+
+
+@if (Id == null)
+{
+    <PageTitle>Create a new Order</PageTitle>
+    <h3>Create a new Order</h3>
+}
+else
+{
+  @*  <PageTitle>Edit @Catalog.TotalPrice</PageTitle>
+    <h3>Edit @Catalog.TotalPrice</h3>*@
+}
+
+@if (OrderDto == null && ErrorMessage == null)
+{
+    <h3>Loading orders...</h3>
+}
+else if (ErrorMessage != null)
+{
+    <DisplayError ErrorMessage="@ErrorMessage" />
+}
+else
+{
+
+    <EditForm Model="OrderDto" OnSubmit="HandleSubmit">
+   @* <div>
+        <label for="customerId">ID</label>
+        <InputNumber id="customerId" @bind-Value="OrderDto.Id" class="form-control"></InputNumber>
+    </div> *@
+    <div>
+        <label for="orderDate">Product Id</label>
+        <InputNumber id="orderDate" @bind-Value="OrderDto.ProductId " class="form-control"></InputNumber>
+    </div>
+    <div>
+        <label for="totalPrice">Quantity</label>
+        <InputNumber id="totalPrice" @bind-Value="OrderDto.Quantity" class="form-control"></InputNumber>
+    </div>
+    <br />
+    <br />
+    <div>
+        <button type="submit" class="btn btn-primary">@BtnText</button>
+    </div>
+</EditForm>
+
+}
